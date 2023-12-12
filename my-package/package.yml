@@ -8,5 +8,5 @@ matches:
   - trigger: ":mypro"
     replace: "pro@fxguillois.email"
 
- - trigger: ":myname"
+  - trigger: ":myname"
     replace: "François-Xavier Guillois"
