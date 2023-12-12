@@ -1,0 +1,12 @@
+matches:
+  - trigger: ":mytel"
+    replace: "+33.638 056 100"
+
+  - trigger: ":my@"
+    replace: "internet@fxguillois.email"
+
+  - trigger: ":mypro"
+    replace: "pro@fxguillois.email"
+
+ - trigger: ":myname"
+    replace: "François-Xavier Guillois"
