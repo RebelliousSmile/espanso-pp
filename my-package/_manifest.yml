@@ -1,5 +1,5 @@
 name: "my-package"
 title: "My Package"
-desc: "compilation of some espanso instructions."
+description: "compilation of some espanso instructions."
 version: "0.1.0"
 author: "François-Xavier Guillois"
