@@ -10,3 +10,6 @@ matches:
 
   - trigger: ":myname"
     replace: "François-Xavier Guillois"
+
+  - trigger: ":devia"
+    replace: "add PHP Laravel, Vuejs, Nuxtjs in used langages, delete React, NextJs, Zod, React-hook-form"
