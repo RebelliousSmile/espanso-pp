@@ -15,25 +15,25 @@ matches:
     replace: "add PHP Laravel, Vuejs, Nuxtjs in used langages, delete TypeScript, React, NextJs, Zod, React-hook-form. Always use <script setup> tag, with composition API for Vue3."
 
   - trigger: ":mkjs"
-    replace: |
+    replace: |+
       ```javascript
 
       ```
 
   - trigger: ":mkbash"
-    replace: |
+    replace: |+
       ```bash
 
       ```
 
   - trigger: ":mkphp"
-    replace: |
+    replace: |+
       ```php
 
       ```
 
   - trigger: ":mksql"
-    replace: |
+    replace: |+
       ```sql
 
       ```
