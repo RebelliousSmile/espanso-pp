@@ -20,5 +20,23 @@ matches:
 
       ```
 
+  - trigger: ":mkbash"
+    replace: |
+      ```bash
+
+      ```
+
+  - trigger: ":mkphp"
+    replace: |
+      ```php
+
+      ```
+
+  - trigger: ":mksql"
+    replace: |
+      ```sql
+
+      ```
+
   - trigger: ":mkil"
     replace: "[[|Retour]]"
