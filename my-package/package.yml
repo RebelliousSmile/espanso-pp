@@ -13,3 +13,12 @@ matches:
 
   - trigger: ":devia"
     replace: "add PHP Laravel, Vuejs, Nuxtjs in used langages, delete TypeScript, React, NextJs, Zod, React-hook-form. Always use <script setup> tag, with composition API for Vue3."
+
+  - trigger: ":mkjs"
+    replace: |
+      ```javascript
+       
+      ```
+
+  - trigger: ":mkil"
+    replace: "[[|Retour]]"
