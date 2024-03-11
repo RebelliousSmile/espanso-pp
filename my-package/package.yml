@@ -48,7 +48,7 @@ matches:
     replace: "<mark class='tag'>$|$</mark>"  
 
   - trigger: ":note"
-    replace: ">[!move] $|$\n>"  
+    replace: ">[!move] $|$>"  
 
   - trigger: ":desc"
     replace: ">[!description] $|$"  
