@@ -83,7 +83,7 @@ matches:
     action:
       script: |
         import json
-        class = f"{form.class}"
+        bg = f"{form.class}"
         title = f"{form.title}"
         stars = f"{form.stars}"
         description = f"{form.description}"
@@ -93,7 +93,7 @@ matches:
         list3 = json.loads(form.list3)
         stars_str = "★" * stars
         output = f"""
-        <div class='danger {class}'>
+        <div class='danger {bg}'>
           <h3>{title} {stars_str}</h3>
           <p>{description}</p>
           <h4>{subtitle}</h4>
