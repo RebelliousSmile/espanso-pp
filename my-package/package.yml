@@ -62,18 +62,21 @@ matches:
         <ul>
         {% for item in form.list1 %}
           <li>{{ item }}</li>
+          {% esp.console.log(item) %}
         {% endfor %}
         </ul>
         <hr>
         <ul>
         {% for item in form.list2 %}
           <li>{{ item }}</li>
+          {% esp.console.log(item) %}
         {% endfor %}
         </ul>
         <hr>
         <ul>
         {% for item in form.list3 %}
           <li>{{ item }}</li>
+          {% esp.console.log(item) %}
         {% endfor %}
         </ul>
       </div>
