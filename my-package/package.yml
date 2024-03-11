@@ -48,10 +48,10 @@ matches:
     replace: "<mark class='tag'>$|$</mark>"  
 
   - trigger: ":note"
-    replace: ">[!move] $|$\n> "  
+    replace: ">[!move] $| \n> \n$"
 
   - trigger: ":desc"
-    replace: ">>[!description] $|$"  
+    replace: ">[!description] $|$"  
 
   - trigger: ":danger"
     replace: |
