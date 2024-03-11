@@ -1,0 +1,18 @@
+matches:
+  - trigger: ":mkjs"
+    replace: "```javascript\n$|$\n```"
+
+  - trigger: ":mkbash"
+    replace: "```bash\n$|$\n```"
+
+  - trigger: ":mkphp"
+    replace: "```php\n$|$\n```"
+
+  - trigger: ":mksql"
+    replace: "```sql\n$|$\n```"
+
+  - trigger: ":mkil"
+    replace: "[[|Retour]]"
+
+  - trigger: ":tasks"
+    replace: "- [ ]tâche 1\n- [ ]tâche 2\n- [ ]tâche 3\n- [ ]tâche 4\n- [ ]tâche 5"  
