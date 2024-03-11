@@ -39,19 +39,19 @@ matches:
     replace: "<mark class='spectrum'>$|$</mark>"  
 
   - trigger: ":clue"
-    replace: ">[!clue] $|$\n"  
+    replace: ">[!clue] $|$"  
   
   - trigger: ":sclue"
-    replace: ">[!special-clue] $|$\n"  
+    replace: ">[!special-clue] $|$"  
 
   - trigger: ":tag"
     replace: "<mark class='tag'>$|$</mark>"  
 
   - trigger: ":note"
-    replace: ">[!move] $|$\n> \n"  
+    replace: ">[!move] $|$\n> "  
 
   - trigger: ":desc"
-    replace: ">>[!description] $|$\n"  
+    replace: ">>[!description] $|$"  
 
   - trigger: ":danger"
     replace: |
