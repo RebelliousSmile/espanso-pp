@@ -15,4 +15,4 @@ matches:
     replace: "[[|Retour]]"
 
   - trigger: ":tasks"
-    replace: "- [ ]tâche 1\n- [ ]tâche 2\n- [ ]tâche 3\n- [ ]tâche 4\n- [ ]tâche 5"  
+    replace: "- [ ] Tâche 1\n- [ ] Tâche 2\n- [ ] Tâche 3\n- [ ] Tâche 4\n- [ ] Tâche 5"  
