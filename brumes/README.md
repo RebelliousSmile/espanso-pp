@@ -1,4 +1,4 @@
-an alernate way of using Brumes CSS rules inside Obsidian. 
+### an alernate way of using Brumes CSS rules inside Obsidian. 
 
 - you can create a tag with `:tag` instruction
 - you can create a status with `:status` instruction
@@ -11,7 +11,7 @@ an alernate way of using Brumes CSS rules inside Obsidian.
 
 package_repo: https://github.com/tnntwister/espanso-pp
 
-### how to install it ? 
+### how to install it ? 
 
 after have installed espanso, use this command : 
 
