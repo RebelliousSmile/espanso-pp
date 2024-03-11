@@ -1,9 +1,10 @@
-a collection of triggers about markdown formatting specifically on obsidian (this guy breaks sometimes the espanso work)
+### A collection of...
+
+triggers about markdown formatting specifically on obsidian (this guy breaks sometimes the espanso work)
 
 package_repo: https://github.com/tnntwister/espanso-pp
 
-### how to install it ? 
-
+### How to install it ? 
 
 after have installed espanso, use this command : 
 
