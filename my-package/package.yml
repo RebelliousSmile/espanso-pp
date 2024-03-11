@@ -54,71 +54,63 @@ matches:
     replace: ">>[!description] $|$\n"  
 
   - trigger: ":danger"
-    form:
-      bg:
-        label: "Quelle classe pour le danger ?"
-        value: "bg3"
-      title: "Quel est son nom ?"
-      stars:
-        label: "How many stars?"
-        type: "dropdown"
-        options:
-          - label: "0"
-            value: "0"
-          - label: "1"
-            value: "1"
-          - label: "2"
-            value: "2"
-          - label: "3"
-            value: "3"
-          - label: "4"
-            value: "4"
-          - label: "5"
-            value: "5"
-      description: "Descris le danger en quelques mots"
-      subtitle: "Comment vaincre le danger ?"
-      list1: "Liste les manoeuvres spéciales"
-      list2: "Liste les manoeuvres majeures"
-      list3: "Liste les manoeuvres mineures"
-    action:
-      script: |
-        import json
-        bg = f"{form.class}"
-        title = f"{form.title}"
-        stars = f"{form.stars}"
-        description = f"{form.description}"
-        subtitle = f"{form.subtitle}"
-        list1 = json.loads(form.list1)
-        list2 = json.loads(form.list2)
-        list3 = json.loads(form.list3)
-        stars_str = "★" * stars
-        output = f"""
-        <div class='danger {bg}'>
-          <h3>{title} {stars_str}</h3>
-          <p>{description}</p>
-          <h4>{subtitle}</h4>
-          <ul>
-        """
-        for item in list1:
-          output += f"<li>{item}</li>"
-        output += """
-          </ul>
-          <hr>
-          <ul>
-        """
-        for item in list2:
-          output += f"<li>{item}</li>"
-        output += """
-          </ul>
-          <hr>
-          <ul>
-        """
-        for item in list3:
-          output += f"<li>{item}</li>"
-        output += """
-          </ul>
-        </div>
-        """
-        espanso.output(output)   
-    
-
+    replace: |
+      <div class='danger {{form.class}}'>
+        <h3>{{form.title}} {{form.stars}}</h3>
+        <p>{{form.description}}</p>
+        <h4>{{form.subtitle}}</h4>
+        <ul>
+        {% for item in form.list1 %}
+          <li>{{ item }}</li>
+        {% endfor %}
+        </ul>
+        <hr>
+        <ul>
+        {% for item in form.list2 %}
+          <li>{{ item }}</li>
+        {% endfor %}
+        </ul>
+        <hr>
+        <ul>
+        {% for item in form.list3 %}
+          <li>{{ item }}</li>
+        {% endfor %}
+        </ul>
+      </div>
+    vars:
+      - name: "form"
+        type: form
+        params:
+          layout: |
+            Class: [[class]]
+            Title: [[title]]
+            Stars: [[stars]]
+            Description: [[description]]
+            Subtitle: [[subtitle]]
+            List 1: [[list1]]
+            List 2: [[list2]]
+            List 3: [[list3]]
+          fields:
+            class:
+              value: "bg3"
+            title: {}
+            stars:
+              type: list
+              values:
+                - "★"
+                - "★★"
+                - "★★★"
+                - "★★★★"
+                - "★★★★★"
+            description:
+              multiline: true
+            subtitle: {}
+            list1:
+              type: list
+              multiline: true
+            list2:
+              type: list
+              multiline: true
+            list3:
+              type: list
+              multiline: true
