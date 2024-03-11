@@ -1,9 +1,8 @@
-a collection of triggers about my everyday needs
+### a collection of triggers about my everyday needs
 
 package_repo: https://github.com/tnntwister/espanso-pp
 
-### how to install it ? 
-
+### How to install it ? 
 
 after have installed espanso, use this command : 
 
