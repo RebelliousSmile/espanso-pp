@@ -60,23 +60,20 @@ matches:
         <p>{{form.description}}</p>
         <h4>{{form.subtitle}}</h4>
         <ul>
-        {% for item in form.list1 %}
-          <li>{{ item }}</li>
-          {% esp.console.log(item) %}
+        {% for list_item in form.list1 %}
+          <li>{{ list_item }}</li>
         {% endfor %}
         </ul>
         <hr>
         <ul>
-        {% for item in form.list2 %}
-          <li>{{ item }}</li>
-          {% esp.console.log(item) %}
+        {% for list_item in form.list2 %}
+          <li>{{ list_item }}</li>
         {% endfor %}
         </ul>
         <hr>
         <ul>
-        {% for item in form.list3 %}
-          <li>{{ item }}</li>
-          {% esp.console.log(item) %}
+        {% for list_item in form.list3 %}
+          <li>{{ list_item }}</li>
         {% endfor %}
         </ul>
       </div>
