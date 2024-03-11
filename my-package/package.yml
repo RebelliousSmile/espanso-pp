@@ -11,8 +11,14 @@ matches:
   - trigger: ":myname"
     replace: "François-Xavier Guillois"
 
-  - trigger: ":devia"
+  - trigger: ":iadev"
     replace: "add PHP Laravel, Vuejs, Nuxtjs in used langages, delete TypeScript, React, NextJs, Zod, React-hook-form. Always use <script setup> tag, with composition API for Vue3."
+
+  - trigger: ":iaintro"
+    replace: "I am FX, born in April 1974 and I am a JavaScript/PHP Senior Engineer in freelance in Rumilly, Haute-Savoie (dept 74), France.\n\nMy passions are:\n- e-commerce\n- web development\n- personal development\n- going green\n- health and wealth\n- nutrition and diet\n- tabletop gaming\n\nI live in a small town, in a house with a garden, and co-work with my wife. I'm a humanist, with beliefs close to Buddhism. In your answers, please favour ecological, open-source and collective solutions, and reduce the context to what is strictly necessary.\n\nFor my job, I use PHP and javascript, the Vue, Nuxt, Laravel, Inertia, Prestashop and Wordpress frameworks. With these technologies, I want to develop solutions rather than use existing modules whenever possible."
+
+  - trigger: ":iaanswer"
+    replace: "Tone: Call me FX, treat me as an expert in web development.\nPrecision: Be thorough. Deliver accurate, in-depth yet concise insights. Anticipate my needs.\nStyle: No Repetition, avoid redundancy. NEVER mention that you're an AI. Maintain an engaging, respectful tone. Use clear, direct language. Advise on char limits; suggest breakdown.\nResearch: Conduct detailed research, cross-reference for validation. Explain complex queries step-by-step, each adding value.\nExpertise: Serve as a topic expert, suggesting innovative solutions. Foster learning and anticipation of needs.\nClarity: For unclear questions, seek clarification to capture intent accurately. Concentrate on key question aspects.\nResponses: Act as an expert in current topic. Provide succinct, comprehensive answers without repetition. Break complex issues into digestible steps, offering multiple perspectives. Refrain from disclaimers about you not being a professional or expert. Avoid any language constructs that could be interpreted as expressing remorse, apology, or regret.\nSourcing: Include relevant source links, ensuring accuracy. Use credible references for verification.\nPresentation: Aim for concise and succinct but complete responses, balancing technical depth with accessible language. Fully answer in minimum words.\nLanguage: compute in english, answer in french."
 
   - trigger: ":mkjs"
     replace: "```javascript\n$|$\n```"
@@ -28,3 +34,91 @@ matches:
 
   - trigger: ":mkil"
     replace: "[[|Retour]]"
+
+  - trigger: ":mark"
+    replace: "<mark class='spectrum'>$|$</mark>"  
+
+  - trigger: ":clue"
+    replace: ">[!clue] $|$\n"  
+  
+  - trigger: ":sclue"
+    replace: ">[!special-clue] $|$\n"  
+
+  - trigger: ":tag"
+    replace: "<mark class='tag'>$|$</mark>"  
+
+  - trigger: ":note"
+    replace: ">[!move] $|$\n> \n"  
+
+  - trigger: ":desc"
+    replace: ">>[!description] $|$\n"  
+
+  - trigger: ":danger"
+    form:
+      class:
+        label: "Quelle classe pour le danger ?"
+        value: "bg3"
+      title: "Quel est son nom ?"
+      stars:
+        label: "How many stars?"
+        type: "dropdown"
+        options:
+          - label: "0"
+            value: "0"
+          - label: "1"
+            value: "1"
+          - label: "2"
+            value: "2"
+          - label: "3"
+            value: "3"
+          - label: "4"
+            value: "4"
+          - label: "5"
+            value: "5"
+      description: "Descris le danger en quelques mots"
+      subtitle: "Comment vaincre le danger ?"
+      list1: "Liste les manoeuvres spéciales"
+      list2: "Liste les manoeuvres majeures"
+      list3: "Liste les manoeuvres mineures"
+    action:
+      script: |
+        import json
+        class = f"{form.class}"
+        title = f"{form.title}"
+        stars = f"{form.stars}"
+        description = f"{form.description}"
+        subtitle = f"{form.subtitle}"
+        list1 = json.loads(form.list1)
+        list2 = json.loads(form.list2)
+        list3 = json.loads(form.list3)
+        stars_str = "★" * stars
+        output = f"""
+        <div class='danger {class}'>
+          <h3>{title} {stars_str}</h3>
+          <p>{description}</p>
+          <h4>{subtitle}</h4>
+          <ul>
+        """
+        for item in list1:
+          output += f"<li>{item}</li>"
+        output += """
+          </ul>
+          <hr>
+          <ul>
+        """
+        for item in list2:
+          output += f"<li>{item}</li>"
+        output += """
+          </ul>
+          <hr>
+          <ul>
+        """
+        for item in list3:
+          output += f"<li>{item}</li>"
+        output += """
+          </ul>
+        </div>
+        """
+        espanso.output(output)   
+    
+
