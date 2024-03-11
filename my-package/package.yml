@@ -55,7 +55,7 @@ matches:
 
   - trigger: ":danger"
     form:
-      class:
+      bg:
         label: "Quelle classe pour le danger ?"
         value: "bg3"
       title: "Quel est son nom ?"
