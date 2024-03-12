@@ -27,7 +27,7 @@ matches:
         <p>{{form.description}}</p>
         <h4>{{form.subtitle}}</h4>
         <ul>
-          {{form.list2}}
+          {{#script:list_to_html(form.list1)}}
         </ul>
         <hr>
         <ul>
@@ -69,13 +69,17 @@ matches:
             subtitle: {}
             list1:
               multiline: true
-              transform: |
-                $0.split("\n").map(item => `<li>${item}</li>`).join('')
             list2:
               multiline: true
-              transform: |
-                $0.split("\n").map(item => `<li>${item}</li>`).join('')
             list3:
               multiline: true
-              transform: |
-                $0.split("\n").map(item => `<li>${item}</li>`).join('')
+    scripts:
+    - name: list_to_html
+      args:
+        - list_text
+      code: |
+        items = list_text.strip().split('\n')
+        html = '\n'.join(f'<li>{item}</li>' for item in items)
+        return html
+
+
