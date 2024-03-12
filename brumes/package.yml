@@ -70,12 +70,12 @@ matches:
             list1:
               multiline: true
               transform: |
-              $0.split("\n").map(item => `<li>${item}</li>`).join('')
+                $0.split("\n").map(item => `<li>${item}</li>`).join('')
             list2:
               multiline: true
               transform: |
-              $0.split("\n").map(item => `<li>${item}</li>`).join('')
+                $0.split("\n").map(item => `<li>${item}</li>`).join('')
             list3:
               multiline: true
               transform: |
-              $0.split("\n").map(item => `<li>${item}</li>`).join('')
+                $0.split("\n").map(item => `<li>${item}</li>`).join('')
