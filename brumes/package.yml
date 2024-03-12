@@ -27,7 +27,7 @@ matches:
         <p>{{form.description}}</p>
         <h4>{{form.subtitle}}</h4>
         <ul>
-          {{ form.list1 | replace('\n', '\n<li>') | safe }}
+          {{form.list2}}
         </ul>
         <hr>
         <ul>
@@ -48,8 +48,7 @@ matches:
             Stars: [[stars]]
             Description: [[description]]
             Subtitle: [[subtitle]]
-            List 1: 
-              multiline: true
+            List 1: [[list1]]
             List 2: [[list2]]
             List 3: [[list3]]
           fields:
@@ -69,9 +68,14 @@ matches:
               multiline: true
             subtitle: {}
             list1:
-              type: text
               multiline: true
+              transform: |
+              $0.split("\n").map(item => `<li>${item}</li>`).join('')
             list2:
               multiline: true
+              transform: |
+              $0.split("\n").map(item => `<li>${item}</li>`).join('')
             list3:
               multiline: true
+              transform: |
+              $0.split("\n").map(item => `<li>${item}</li>`).join('')
