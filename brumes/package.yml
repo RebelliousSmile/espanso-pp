@@ -73,10 +73,10 @@ matches:
               multiline: true
             list3:
               multiline: true
-       - name: flist1
-          type: shell
-          params:
-              cmd: "echo '{{form.list1}}' | rev"
+      - name: flist1
+        type: shell
+        params:
+          cmd: "echo '{{form.list1}}' | sed -e 's/^/<li>/' -e 's/$/<\/li>/' -e 's/^<li>$/<li>/' -e 's/<\/li>$/<\/li>/' -e 's/<\/li><li>/<\/li>\n<li>/g'"
       - name: flist2
         type: shell
         params:
