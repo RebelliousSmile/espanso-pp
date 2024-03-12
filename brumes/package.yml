@@ -76,7 +76,7 @@ matches:
       - name: flist1
         type: shell
         params:
-          cmd: "echo '{{form.list1}}' | sed -e 's/^/<li>/' -e 's/^<li>$/<li>/' -e 's/<\\/li>$/<\\/li>/'"
+          cmd: "echo '{{form.list1}}' | sed -e 's/^/<li>/' -e 's/$/<\\/li>/' -e 's/^<li>$/<li>/' -e 's/<\\/li>$/<\\/li>/'"
       - name: flist2
         type: shell
         params:
