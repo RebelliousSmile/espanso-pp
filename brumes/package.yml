@@ -85,8 +85,8 @@ matches:
       - name: flist2
         type: shell
         params:
-          cmd: "echo '{{form.list2}}' | sed -e 's/^/<li>/' -e 's/$/<\\/li>/' -e 's/^<li>$/<li>/' -e 's/<\\/li>$/<\\/li>/'"
+          cmd: echo "{{form.list2}}" | {{option}}
       - name: flist3
         type: shell
         params:
-          cmd: "echo '{{form.list3}}' | sed -e 's/^/<li>/' -e 's/$/<\\/li>/' -e 's/^<li>$/<li>/' -e 's/<\\/li>$/<\\/li>/'"
+          cmd: echo "{{form.list3}}" | {{option}}
