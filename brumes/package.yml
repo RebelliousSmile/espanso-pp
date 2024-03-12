@@ -74,8 +74,14 @@ matches:
             list3:
               multiline: true
             flist1:
-              value: "{{#each form.list1}}<li>{{this}}</li>{{/each}}"  
+              type: shell
+              params:
+                cmd: "echo '{{form.list1}}' | sed -e 's/^/<li>/' -e 's/$/<\/li>/' -e 's/^<li>$/<li>/' -e 's/<\/li>$/<\/li>/' -e 's/<\/li><li>/<\/li>\n<li>/g'"
             flist2:
-              value: "{{#each form.list1}}<li>{{this}}</li>{{/each}}"  
+              type: shell
+              params:
+                cmd: "echo '{{form.list2}}' | sed -e 's/^/<li>/' -e 's/$/<\/li>/' -e 's/^<li>$/<li>/' -e 's/<\/li>$/<\/li>/' -e 's/<\/li><li>/<\/li>\n<li>/g'"
             flist3:
-              value: "{{#each form.list1}}<li>{{this}}</li>{{/each}}"  
+              type: shell
+              params:
+                cmd: "echo '{{form3.list3}}' | sed -e 's/^/<li>/' -e 's/$/<\/li>/' -e 's/^<li>$/<li>/' -e 's/<\/li>$/<\/li>/' -e 's/<\/li><li>/<\/li>\n<li>/g'"
