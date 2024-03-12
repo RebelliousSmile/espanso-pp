@@ -27,28 +27,15 @@ matches:
         <p>{{form.description}}</p>
         <h4>{{form.subtitle}}</h4>
         <ul>
-        $(python3 -c "
-          import re
-          import sys
-
-          text = sys.stdin.read()
-          items = re.findall(r'[^\n]+', text)
-
-          for item in items:
-            print(f'<li>{item}</li>')
-          ")
+          {{ form.list1 | replace('\n', '\n<li>') | safe }}
         </ul>
         <hr>
         <ul>
-        $(for list_item in ${form.list2}; do
-          echo "<li>${list_item}</li>"
-        done)
+          {{form.list2}}
         </ul>
         <hr>
         <ul>
-        $(for list_item in ${form.list3}; do
-          echo "<li>${list_item}</li>"
-        done)
+          {{form.list3}}
         </ul>
       </div>
     vars:
@@ -61,7 +48,8 @@ matches:
             Stars: [[stars]]
             Description: [[description]]
             Subtitle: [[subtitle]]
-            List 1: [[list1]]
+            List 1: 
+              multiline: true
             List 2: [[list2]]
             List 3: [[list3]]
           fields:
@@ -81,20 +69,8 @@ matches:
               multiline: true
             subtitle: {}
             list1:
-              type: script
-              params:
-                script: |
-                  import re
-                  import espanso
-
-                  trigger_match = espanso.get_trigger_match()
-                  text = trigger_match.group(0)
-                  items = re.findall(r'[^\n]+', text)
-
-                  form_data = {
-                    'list1': '\n'.join(items),
-                  }
-                  espanso.set_variable('form', form_data)
+              type: text
+              multiline: true
             list2:
               multiline: true
             list3:
