@@ -73,15 +73,15 @@ matches:
               multiline: true
             list3:
               multiline: true
-            flist1:
-              type: shell
-              params:
-                cmd: "echo '{{form.list1}}'"
-            flist2:
-              type: shell
-              params:
-                cmd: "echo '{{form.list2}}'"
-            flist3:
-              type: shell
-              params:
-                cmd: "echo '{{form.list3}}'"
+      - flist1:
+        type: shell
+        params:
+          cmd: "echo '{{form.list1}}' | rev"
+      - flist2:
+        type: shell
+        params:
+          cmd: "echo '{{form.list2}}' | rev"
+      - flist3:
+        type: shell
+        params:
+          cmd: "echo '{{form.list3}}' | rev"
