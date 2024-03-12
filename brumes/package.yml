@@ -43,14 +43,14 @@ matches:
         type: form
         params:
           layout: |
-            Class: [[class]]
-            Title: [[title]]
-            Stars: [[stars]]
+            Classe : [[class]]
+            Nom : [[title]]
+            Menace : [[stars]]
             Description: [[description]]
-            Subtitle: [[subtitle]]
-            List 1: [[list1]]
-            List 2: [[list2]]
-            List 3: [[list3]]
+            Seuils : [[subtitle]]
+            Actions spéciales : [[list1]]
+            Actions majeures : [[list2]]
+            Actions mineures : [[list3]]
           fields:
             class:
               value: "bg3"
@@ -80,8 +80,8 @@ matches:
       - name: flist2
         type: shell
         params:
-          cmd: "echo '{{form.list2}}' | sed -e 's/^/<li>/' -e 's/^<li>$/<li>/' -e 's/<\\/li>$/<\\/li>/'"
+          cmd: "echo '{{form.list2}}' | sed -e 's/^/<li>/' -e 's/$/<\\/li>/' -e 's/^<li>$/<li>/' -e 's/<\\/li>$/<\\/li>/'"
       - name: flist3
         type: shell
         params:
-          cmd: "echo '{{form.list3}}' | sed -e 's/^/<li>/' -e 's/^<li>$/<li>/' -e 's/<\\/li>$/<\\/li>/'"
+          cmd: "echo '{{form.list3}}' | sed -e 's/^/<li>/' -e 's/$/<\\/li>/' -e 's/^<li>$/<li>/' -e 's/<\\/li>$/<\\/li>/'"
