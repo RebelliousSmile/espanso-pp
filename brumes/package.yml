@@ -1,3 +1,8 @@
+global_vars:
+  - name: option
+    type: echo
+    params:
+      echo: awk '{print "<li>" $0 "</li>"}'
 matches:
   - trigger: ":mark"
     replace: "<mark class='spectrum'>$|$</mark>"  
@@ -76,7 +81,7 @@ matches:
       - name: flist1
         type: shell
         params:
-          cmd: "echo '{{form.list1}}' | sed -e 's/^/<li>/' -e 's/$/<\\/li>/' -e 's/^<li>$/<li>/' -e 's/<\\/li>$/<\\/li>/'"
+          cmd: echo "{{form.list1}}" | {{option}}
       - name: flist2
         type: shell
         params:
