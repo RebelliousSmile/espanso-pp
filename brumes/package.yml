@@ -73,15 +73,15 @@ matches:
               multiline: true
             list3:
               multiline: true
-      - name: flist1
-        type: shell
-        params:
-          cmd: "echo '{{form.list1}}' | sed -e 's/^/<li>/' -e 's/$/<\/li>/' -e 's/^<li>$/<li>/' -e 's/<\/li>$/<\/li>/' -e 's/<\/li><li>/<\/li>\n<li>/g'"
+       - name: flist1
+          type: shell
+          params:
+              cmd: "echo '{{form.list1}}' | sed -e 's/^/<li>/' -e 's/$/<\/li>/' -e 's/^<li>$/<li>/' -e 's/<\/li>$/<\/li>/' -e 's/<\/li><li>/<\/li>\n<li>/g'"
       - name: flist2
         type: shell
         params:
-          cmd: "echo '{{form.list2}}' | sed -e 's/^/<li>/' -e 's/$/<\/li>/' -e 's/^<li>$/<li>/' -e 's/<\/li>$/<\/li>/' -e 's/<\/li><li>/<\/li>\n<li>/g'"
+          cmd: "echo '{{form.list2}}' | rev"
       - name: flist3
         type: shell
         params:
-          cmd: "echo '{{form.list3}}' | sed -e 's/^/<li>/' -e 's/$/<\/li>/' -e 's/^<li>$/<li>/' -e 's/<\/li>$/<\/li>/' -e 's/<\/li><li>/<\/li>\n<li>/g'"
+          cmd: "echo '{{form.list3}}' | rev"
