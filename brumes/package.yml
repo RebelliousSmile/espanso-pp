@@ -27,15 +27,15 @@ matches:
         <p>{{form.description}}</p>
         <h4>{{form.subtitle}}</h4>
         <ul>
-          {{#script:list_to_html(form.list1)}}
+          {{form.flist1}}
         </ul>
         <hr>
         <ul>
-          {{form.list2}}
+          {{form.flist2}}
         </ul>
         <hr>
         <ul>
-          {{form.list3}}
+          {{form.flist3}}
         </ul>
       </div>
     vars:
@@ -73,13 +73,9 @@ matches:
               multiline: true
             list3:
               multiline: true
-    scripts:
-    - name: list_to_html
-      args:
-        - list_text
-      code: |
-        items = list_text.strip().split('\n')
-        html = '\n'.join(f'<li>{item}</li>' for item in items)
-        return html
-
-
+            flist1:
+              value: "{{#each form.list1}}<li>{{this}}</li>{{/each}}"  
+            flist2:
+              value: "{{#each form.list1}}<li>{{this}}</li>{{/each}}"  
+            flist3:
+              value: "{{#each form.list1}}<li>{{this}}</li>{{/each}}"  
