@@ -84,4 +84,4 @@ matches:
             flist3:
               type: shell
               params:
-                cmd: "echo '{{form3.list3}}' | sed -e 's/^/<li>/' -e 's/$/<\/li>/' -e 's/^<li>$/<li>/' -e 's/<\/li>$/<\/li>/' -e 's/<\/li><li>/<\/li>\n<li>/g'"
+                cmd: "echo '{{form.list3}}' | sed -e 's/^/<li>/' -e 's/$/<\/li>/' -e 's/^<li>$/<li>/' -e 's/<\/li>$/<\/li>/' -e 's/<\/li><li>/<\/li>\n<li>/g'"
