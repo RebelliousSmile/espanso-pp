@@ -7,7 +7,7 @@
 - you can create a clue block with `:clue` instruction
 - you can create a special clue block with `:sclue` instruction
 - you can create a move block  with `:note` instruction (because of obsidian, i couldn't use the cursor rules of espanso, but you can return after title, write the rest of your text, and return two times to close the block)
-- you can launch a danger form with `:danger` instruction
+- you can launch a danger form with `:dangerhtml` instruction
 
 package_repo: https://github.com/tnntwister/espanso-pp
 
