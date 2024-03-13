@@ -25,7 +25,7 @@ matches:
   - trigger: ":desc"
     replace: ">[!description] $|$"  
 
-  - trigger: ":danger"
+  - trigger: ":dangerhtml"
     replace: |
       <div class='danger {{form.class}}'>
         <h3>{{form.title}} {{form.stars}}</h3>
