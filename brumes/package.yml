@@ -90,3 +90,23 @@ matches:
         type: shell
         params:
           cmd: echo "{{form.list3}}" | {{option}}
+  - trigger: ":dangerrules"
+    replace: |
+      ÉTAPE 1 : CONCEPT
+      Réfléchissez au personnage, lieu, force ou groupe que ce Danger va représenter, en utilisant les questions suivantes : POUR UN PERSONNAGE : QUELLES SONT LES CAPACITÉS ET LES RESSOURCES DE CE DANGER ? POUR UN RÉCEPTACLE : QUEL EST SON MYTHOS ? QUEL EST SON NIVEAU DE CONSCIENCE - QUELS SONT SES POUVOIRS DE MYTHOS ? POUR UN LIEU : QU’EST- CE QUI REND CET ENDROIT DANGEREUX ? POUR TOUS LES DANGERS : DE QUELLES MANIÈRES CE DANGER VA-T- IL INTERAGIR AVEC LES PERSONNAGES JOUEURS ?
+
+      ÉTAPE 2 : CHOIX DES INDICATEURS
+      Créez les indicateurs du Danger en répondant aux questions suivantes. Au moins un indicateur doit être créé.
+      Recensez une ou plusieurs façons de surmonter ou de vaincre ce Danger ; il s’agit des indicateurs
+      de Danger. Pour chaque indicateur, déterminez un niveau de 1 à 6 correspondant au rang des statuts qu’il faut lui infliger pour atteindre sa limite.
+      Créez les indicateurs en répondant aux questions suivantes : COMMENT CE DANGER PEUT- IL ÊTRE SURMONTÉ ? QUELS STATUTS PEUVENT EN VENIR À BOUT ? VERS QUELLE TRANSFORMATION OU VERS QUELLE FIN LE DANGER TEND - IL ?
+
+      ÉTAPE 3 : CHOIX DES MANŒUVRES MINEURES
+      Créez les manœuvres mineures du Danger en répondant aux questions suivantes : DANS QUELLES MESURES CE DANGER COMPLIQUE -T- IL LA VIE DE L’ÉQUIPE, SANS CONSÉQUENCE DRAMATIQUE ( POUR LE MOMENT ) ?
+      Rédigez quelques courtes phrases décrivant les actions typiques de ce Danger, susceptibles d’entrainer des complications sans influence directe sur les règles (c’est-à-dire sans effet de jeu). Ces actions pourraient être les prémices d’une manœuvre majeure de ce Danger. 
+
+      ÉTAPE 4 : CHOIX DES MANŒUVRES MAJEURES
+      Créez les manœuvres majeures du Danger en répondant aux questions suivantes :  COMMENT CE DANGER PEUT- IL INFLUENCER OU BLESSER LES AUTRES, SI L’ÉQUIPE LE LAISSE FAIRE ? - COMMENT CE DANGER PEUT- IL S’AIDER LUI - MÊME OU SES ALLIÉS, SI L’ÉQUIPE LE LAISSE FAIRE ?  COMMENT CE DANGER AFFECTE -T- IL LA SCÈNE OU L’INTRIGUE, SI L’ÉQUIPE LE LAISSE FAIRE ?
+
+      ÉTAPE 5 : CHOIX DES MANŒUVRES PERSONNALISÉES
+      Définissez les manœuvres personnalisées du Danger en répondant aux questions suivantes : QUE PEUT FAIRE CE DANGER QUI N’EST PAS COUVERT PAR SES MANŒUVRES MINEURES ET MAJEURES ? QUELLE QUALITÉ CE DANGER POSSÈDE -T- IL QUI N’EST PAS DÉCRITE DANS SES MANŒUVRES MINEURES ET MAJEURES ?
