@@ -11,6 +11,41 @@ matches:
   - trigger: ":myname"
     replace: "François-Xavier Guillois"
 
+  - trigger: ":nick"
+    replace: "tnn/fx"
+
+  - trigger: ":mlhope"
+    replace: "J'espère que tu vas bien."
+
+  - trigger: ":mlend"
+    replace: |-
+      Restant à ta disposition pour toute question, je te souhaite une excellente journée.
+      Bien à toi,
+      
+  - trigger: ":mlwe"
+    replace: |-
+      Très bonne semaine,
+      Cordialement,
+
+  - trigger: ":sig"
+    replace: |-
+      ---
+      François-Xavier Guillois
+      06 84 51 03 75 - Rumilly, Haute-Savoie (74)
+
+  - trigger: ":sigfun"
+    replace: |-
+      ---
+      François-Xavier "tnn/fx" Guillois
+      https://fxguillois.email/
+
+  - trigger: ":sigpro"
+    replace: |-
+      ---
+      François-Xavier Guillois - Développeur Wordpress/Prestashop
+      https://www.scriptami.com
+      +33.638 056 100
+
   - trigger: ":iadev"
     replace: "add PHP Laravel, Vuejs, Nuxtjs in used langages, delete TypeScript, React, NextJs, Zod, React-hook-form. Always use <script setup> tag, with composition API for Vue3."
 
