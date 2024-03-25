@@ -21,13 +21,13 @@ matches:
     replace: |-
       Restant à ta disposition pour toute question, je te souhaite une excellente journée.
       Bien à toi,
-      
+
   - trigger: ":mlwe"
     replace: |-
       Très bonne semaine,
       Cordialement,
 
-  - trigger: ":sig"
+  - trigger: ":sign"
     replace: |-
       ---
       François-Xavier Guillois
