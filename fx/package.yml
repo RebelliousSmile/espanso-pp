@@ -61,4 +61,6 @@ matches:
   - trigger: ":vvw"
     replace: "Bonsoir les Verbillons, bonsoir Olivier, bonsoir Bruno, bonsoir Sandra !"
   
+  - trigger: ":jsDocScript"
+    replace: "tree -d -L 3 > documentation/arborescence.txt && jsdoc -r -c jsdoc.json src -d ./documentation/jsdocs && npx jsdoc-to-markdown --json src/**/*.js > documentation/rag.json"
 
