@@ -42,7 +42,7 @@ matches:
   - trigger: ":sigpro"
     replace: |-
       ---
-      François-Xavier Guillois - Développeur Wordpress/Prestashop
+      François-Xavier Guillois - Développeur Wordpress/Prestashop/Discord
       https://www.scriptami.com
       +33.638 056 100
 
@@ -58,5 +58,7 @@ matches:
   - trigger: ":t2danger"
     replace: "transforms my issue in the real world into a danger for the City fo Mist role-playing system following the preceding guidelines. maneuvers must be capable of being performed by powerless humans. create a Danger sheet in sheet with numbered indicators, countdown or statuses when appropriate."
 
+  - trigger: ":vvw"
+    replace: "Bonsoir les Verbillons, bonsoir Olivier, bonsoir Bruno, bonsoir Sandra !"
   
 
