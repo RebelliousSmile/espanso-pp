@@ -64,7 +64,7 @@ matches:
   - trigger: ":jsDocScript"
     replace: "tree -L 3 -I 'node_modules|documentation|.vscode' > documentation/arborescence.txt && jsdoc -r -c jsdoc.json src -d ./documentation/jsdocs && npx jsdoc-to-markdown --json src/**/*.js > documentation/rag.json"
 
-  - trigger: ":datefmt"
+  - trigger: ":obsdate"
     replace: "{{output}}"
     vars:
       - name: output
