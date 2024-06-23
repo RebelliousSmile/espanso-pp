@@ -31,9 +31,16 @@ matches:
     replace: |-
       ---
       François-Xavier Guillois
-      06 84 51 03 75 - Rumilly, Haute-Savoie (74)
+      06 84 51 03 75
+      Messagerie instantanée sur Signal (https://signal.me/#eu/T-BmyvkxPeRs3bSj852ie8yG7fXhqUyNK0FOTYwlLulDD7o8Z5VL8bfAzFEqRXlM)
 
-  - trigger: ":sigfun"
+  - trigger: ":sigcab"
+    replace: |-
+      ---
+      François-Xavier Guillois - Cabinet partagé / Racines (Chambéry) / Lumi (Vallières)
+      06 38 056 100 - location@cabinet-partage.fr
+      Support en temps réel sur Signal (https://signal.me/#eu/T-BmyvkxPeRs3bSj852ie8yG7fXhqUyNK0FOTYwlLulDD7o8Z5VL8bfAzFEqRXlM)
+  - trigger: ":sigperso"
     replace: |-
       ---
       François-Xavier "tnn/fx" Guillois
@@ -42,32 +49,14 @@ matches:
   - trigger: ":sigpro"
     replace: |-
       ---
-      François-Xavier Guillois - Développeur Wordpress/Prestashop/Discord
-      https://www.scriptami.com
+      François-Xavier Guillois - Développeur PHP/JS Laravel/VueJS/Prestashop/Wordpress
+      https://www.scriptami.com - Messagerie instantanée sur Signal (https://signal.me/#eu/T-BmyvkxPeRs3bSj852ie8yG7fXhqUyNK0FOTYwlLulDD7o8Z5VL8bfAzFEqRXlM)
       +33.638 056 100
 
   - trigger: ":iadev"
     replace: "add PHP Laravel, Vuejs, Nuxtjs in used langages, delete TypeScript, React, NextJs, Zod, React-hook-form. Always use <script setup> tag, with composition API for Vue3."
 
-  - trigger: ":iaintro"
-    replace: "I am FX, born in April 1974 and I am a JavaScript/PHP Senior Engineer in freelance in Rumilly, Haute-Savoie (dept 74), France.\n\nMy passions are:\n- e-commerce\n- web development\n- personal development\n- going green\n- health and wealth\n- nutrition and diet\n- tabletop gaming\n\nI live in a small town, in a house with a garden, and co-work with my wife. I'm a humanist, with beliefs close to Buddhism. In your answers, please favour ecological, open-source and collective solutions, and reduce the context to what is strictly necessary.\n\nFor my job, I use PHP and javascript, the Vue, Nuxt, Laravel, Inertia, Prestashop and Wordpress frameworks. With these technologies, I want to develop solutions rather than use existing modules whenever possible."
-
-  - trigger: ":iaanswer"
-    replace: "Tone: Call me FX, treat me as an expert in web development.\nPrecision: Be thorough. Deliver accurate, in-depth yet concise insights. Anticipate my needs.\nStyle: No Repetition, avoid redundancy. NEVER mention that you're an AI. Maintain an engaging, respectful tone. Use clear, direct language. Advise on char limits; suggest breakdown.\nResearch: Conduct detailed research, cross-reference for validation. Explain complex queries step-by-step, each adding value.\nExpertise: Serve as a topic expert, suggesting innovative solutions. Foster learning and anticipation of needs.\nClarity: For unclear questions, seek clarification to capture intent accurately. Concentrate on key question aspects.\nResponses: Act as an expert in current topic. Provide succinct, comprehensive answers without repetition. Break complex issues into digestible steps, offering multiple perspectives. Refrain from disclaimers about you not being a professional or expert. Avoid any language constructs that could be interpreted as expressing remorse, apology, or regret.\nSourcing: Include relevant source links, ensuring accuracy. Use credible references for verification.\nPresentation: Aim for concise and succinct but complete responses, balancing technical depth with accessible language. Fully answer in minimum words.\nLanguage: compute in english, answer in french."
-
-  - trigger: ":t2danger"
-    replace: "transforms my issue in the real world into a danger for the City fo Mist role-playing system following the preceding guidelines. maneuvers must be capable of being performed by powerless humans. create a Danger sheet in sheet with numbered indicators, countdown or statuses when appropriate."
-
-  - trigger: ":vvw"
-    replace: "Bonsoir les Verbillons, bonsoir Olivier, bonsoir Bruno, bonsoir Sandra !"
   
   - trigger: ":jsDocScript"
     replace: "tree -L 3 -I 'node_modules|documentation|.vscode' > documentation/arborescence.txt && jsdoc -r -c jsdoc.json src -d ./documentation/jsdocs && npx jsdoc-to-markdown --json src/**/*.js > documentation/rag.json"
 
-  - regex: ":obsdate\\((?P<date>.*)\\)"
-    replace: "{{output}}"
-    vars:
-      - name: output
-        type: shell
-        params:
-          cmd: "echo  \"$ESPANSO_DATE\" | sed -E 's/([a-z]+) ([0-9]+) ([a-z]+) ([0-9]+) à ([0-9]+):([0-9]+)/\\2 \\3 \\4 (\\1) - \\5H\\6/i'"
