@@ -1,6 +1,9 @@
 matches:
-  - trigger: ":mytel"
+  - trigger: ":mytel1"
     replace: "+33.638 056 100"
+
+  - trigger: ":mytel2"
+    replace: "+33.684 510 375"
 
   - trigger: ":my@"
     replace: "internet@fxguillois.email"
@@ -10,22 +13,6 @@ matches:
 
   - trigger: ":myname"
     replace: "François-Xavier Guillois"
-
-  - trigger: ":nick"
-    replace: "tnn/fx"
-
-  - trigger: ":mlhope"
-    replace: "J'espère que tu vas bien."
-
-  - trigger: ":mlend"
-    replace: |-
-      Restant à ta disposition pour toute question, je te souhaite une excellente journée.
-      Bien à toi,
-
-  - trigger: ":mlwe"
-    replace: |-
-      Très bonne semaine,
-      Cordialement,
 
   - trigger: ":sign"
     replace: |-
@@ -45,6 +32,13 @@ matches:
       ---
       François-Xavier "tnn/fx" Guillois
       https://fxguillois.email/
+
+  - trigger: ":sigsl"
+    replace: |-
+      ---
+      François-Xavier Guillois - Développeur PHP/JS chez Smartlockers
+      https://www.smartlockers.io
+      +33.638 056 100
 
   - trigger: ":sigpro"
     replace: |-
