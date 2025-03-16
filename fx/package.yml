@@ -69,16 +69,16 @@ matches:
   - trigger: ":onetmat1"
     replace: "{ \"msg\":{ \"expire\":\"2024-05-27 10:29:18\", \"from\":\"peripheral\", \"payload\":{ \"data\":\"CDG-SMAR-S340\", \"module\":\"rd4500r\" }, \"to\":\"*\", \"type\":\"EVT\" }, \"sign\":\"la signature\" }"
 
-  - trigger: ":onetag2"
+  - trigger: ":onetmat2"
     replace: "{ \"msg\":{ \"expire\":\"2024-05-27 10:29:18\", \"from\":\"peripheral\", \"payload\":{ \"data\":\"CDG-SMAR-S571\", \"module\":\"rd4500r\" }, \"to\":\"*\", \"type\":\"EVT\" }, \"sign\":\"la signature\" }"
 
-  - trigger: ":onetag3"
+  - trigger: ":onetmat3"
     replace: "{ \"msg\":{ \"expire\":\"2024-05-27 10:29:18\", \"from\":\"peripheral\", \"payload\":{ \"data\":\"CDG-SMAR-S381\", \"module\":\"rd4500r\" }, \"to\":\"*\", \"type\":\"EVT\" }, \"sign\":\"la signature\" }"
 
-  - trigger: ":onetag4"
+  - trigger: ":onetmat4"
     replace: "{ \"msg\":{ \"expire\":\"2024-05-27 10:29:18\", \"from\":\"peripheral\", \"payload\":{ \"data\":\"CDG-SMAR-S323\", \"module\":\"rd4500r\" }, \"to\":\"*\", \"type\":\"EVT\" }, \"sign\":\"la signature\" }"
 
-  - trigger: ":onetag5"
+  - trigger: ":onetmat5"
     replace: "{ \"msg\":{ \"expire\":\"2024-05-27 10:29:18\", \"from\":\"peripheral\", \"payload\":{ \"data\":\"CDG-SMAR-104\", \"module\":\"rd4500r\" }, \"to\":\"*\", \"type\":\"EVT\" }, \"sign\":\"la signature\" }"
 
 
