@@ -57,5 +57,28 @@ matches:
   - trigger: ":oneta"
     replace: "{ \"msg\":{ \"expire\":\"2024-05-27 10:29:18\", \"from\":\"peripheral\", \"payload\":{ \"data\":\"9014BB527B8B04\", \"module\":\"rd4500r\" }, \"to\":\"*\", \"type\":\"EVT\" }, \"sign\":\"la signature\" }"
 
+  - trigger: ":onetag1"
+    replace: "{ \"msg\":{ \"expire\":\"2024-05-27 10:29:18\", \"from\":\"peripheral\", \"payload\":{ \"data\":\"04:48:5F:E2:A6:0F:90\", \"module\":\"pn5180\" }, \"to\":\"*\", \"type\":\"EVT\" }, \"sign\":\"la signature\" }"
+
+  - trigger: ":onetag2"
+    replace: "{ \"msg\":{ \"expire\":\"2024-05-27 10:29:18\", \"from\":\"peripheral\", \"payload\":{ \"data\":\"04:88:1F:0A:07:6B:80\", \"module\":\"pn5180\" }, \"to\":\"*\", \"type\":\"EVT\" }, \"sign\":\"la signature\" }"
+
+  - trigger: ":onetag3"
+    replace: "{ \"msg\":{ \"expire\":\"2024-05-27 10:29:18\", \"from\":\"peripheral\", \"payload\":{ \"data\":\"04:2C:46:CA:A6:0F:90\", \"module\":\"pn5180\" }, \"to\":\"*\", \"type\":\"EVT\" }, \"sign\":\"la signature\" }"
+
+  - trigger: ":onetmat1"
+    replace: "{ \"msg\":{ \"expire\":\"2024-05-27 10:29:18\", \"from\":\"peripheral\", \"payload\":{ \"data\":\"CDG-SMAR-S340\", \"module\":\"rd4500r\" }, \"to\":\"*\", \"type\":\"EVT\" }, \"sign\":\"la signature\" }"
+
+  - trigger: ":onetag2"
+    replace: "{ \"msg\":{ \"expire\":\"2024-05-27 10:29:18\", \"from\":\"peripheral\", \"payload\":{ \"data\":\"CDG-SMAR-S571\", \"module\":\"rd4500r\" }, \"to\":\"*\", \"type\":\"EVT\" }, \"sign\":\"la signature\" }"
+
+  - trigger: ":onetag3"
+    replace: "{ \"msg\":{ \"expire\":\"2024-05-27 10:29:18\", \"from\":\"peripheral\", \"payload\":{ \"data\":\"CDG-SMAR-S381\", \"module\":\"rd4500r\" }, \"to\":\"*\", \"type\":\"EVT\" }, \"sign\":\"la signature\" }"
+
+  - trigger: ":onetag4"
+    replace: "{ \"msg\":{ \"expire\":\"2024-05-27 10:29:18\", \"from\":\"peripheral\", \"payload\":{ \"data\":\"CDG-SMAR-S323\", \"module\":\"rd4500r\" }, \"to\":\"*\", \"type\":\"EVT\" }, \"sign\":\"la signature\" }"
+
+  - trigger: ":onetag5"
+    replace: "{ \"msg\":{ \"expire\":\"2024-05-27 10:29:18\", \"from\":\"peripheral\", \"payload\":{ \"data\":\"CDG-SMAR-104\", \"module\":\"rd4500r\" }, \"to\":\"*\", \"type\":\"EVT\" }, \"sign\":\"la signature\" }"
 
 
