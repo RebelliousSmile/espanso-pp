@@ -54,3 +54,8 @@ matches:
   - trigger: ":jsDocScript"
     replace: "tree -L 3 -I 'node_modules|documentation|.vscode' > documentation/arborescence.txt && jsdoc -r -c jsdoc.json src -d ./documentation/jsdocs && npx jsdoc-to-markdown --json src/**/*.js > documentation/rag.json"
 
+  - trigger: ":oneta"
+    replace: "{ \"msg\":{ \"expire\":\"2024-05-27 10:29:18\", \"from\":\"peripheral\", \"payload\":{ \"data\":\"9014BB527B8B04\", \"module\":\"rd4500r\" }, \"to\":\"*\", \"type\":\"EVT\" }, \"sign\":\"la signature\" }"
+
+
+
